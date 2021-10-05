@@ -9,315 +9,367 @@
     <title>E-Commerce Product Cards</title>
 </head>
 <body>
-   <div id="btnContainer">
-       <ul>
-        <li class="btn active" onclick="filterSelection('all')"> All</li>
-        <li class="btn" onclick="filterSelection('cars')"> Watch</li>
-        <li class="btn" onclick="filterSelection('animals')"> Handbag</li>
-        <li class="btn" onclick="filterSelection('fruits')"> Shirts</li>
-        <li class="btn" onclick="filterSelection('colors')" d > +</li>
-       </ul>
-   </div>
-   <div class="container">
-    <div class="list">
-        <div class="filterDiv +">
-            <div class="box">
-                <div class="imgBox">
-                    <img src="/image/Rayon_Dress.jpg" alt="">
-                    <ul class="usrAc">
-                        <li>
-                            <i class="fa fa-heart"></i>
-                            <span>Add to Wishlist</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-shopping-cart"></i>
-                            <span>Add to cart</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-eye"></i>
-                            <span>Add to Details</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="productInfo">
-                    <div class="productName">
-                        <p>Rayon a-line Dress</p>
-                    </div>
-                    <div class="price_rating">
-                        <p>$13.45</p>
-                        <div class="rating">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section>
+        <div id="btnContainer">
+            <ul>
+             <li class="btn active" data-filter="all" >All</li>
+             <li class="btn" data-filter="watch" > Watch</li>
+             <li class="btn" data-filter="handbag"> Handbag</li>
+             <li class="btn" data-filter="shirts"> Shirts</li>
+             <li class="btn" data-filter="+"> +</li>
+            </ul>
         </div>
-    
-        <div class="filterDiv watch">
-            <div class="box">
-                <div class="imgBox">
-                    <img src="/image/Black_watch.jpg" alt="">
-                    <ul class="usrAc">
-                        <li>
-                            <i class="fa fa-heart"></i>
-                            <span>Add to Wishlist</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-shopping-cart"></i>
-                            <span>Add to cart</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-eye"></i>
-                            <span>Add to Details</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="productInfo">
-                    <div class="productName">
-                        <p>Rayon a-line Dress</p>
-                    </div>
-                    <div class="price_rating">
-                        <p>$13.45</p>
-                        <div class="rating">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                    </div>
-                </div>
+        <div class="container">
+         <div class="list">
+             <div class="filterDiv" data-item="+">
+                 <div class="box">
+                     <div class="imgBox">
+                         <img src="/image/Rayon_Dress.jpg" alt="">
+                         <ul class="usrAc">
+                             <li>
+                                 <i class="fa fa-heart"></i>
+                                 <span>Add to Wishlist</span>
+                             </li>
+                             <li>
+                                 <i class="fa fa-shopping-cart"></i>
+                                 <span>Add to cart</span>
+                             </li>
+                             <li>
+                                 <i class="fa fa-eye"></i>
+                                 <span>Add to Details</span>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="productInfo">
+                         <div class="productName">
+                             <p>Rayon a-line Dress</p>
+                         </div>
+                         <div class="price_rating">
+                             <p>$13.45</p>
+                             <div class="rating">
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         
+             <div class="filterDiv" data-item="watch">
+                 <div class="box">
+                     <div class="imgBox">
+                         <img src="/image/Black_watch.jpg" alt="">
+                         <ul class="usrAc">
+                             <li>
+                                 <i class="fa fa-heart"></i>
+                                 <span>Add to Wishlist</span>
+                             </li>
+                             <li>
+                                 <i class="fa fa-shopping-cart"></i>
+                                 <span>Add to cart</span>
+                             </li>
+                             <li>
+                                 <i class="fa fa-eye"></i>
+                                 <span>Add to Details</span>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="productInfo">
+                         <div class="productName">
+                             <p>Rayon a-line Dress</p>
+                         </div>
+                         <div class="price_rating">
+                             <p>$13.45</p>
+                             <div class="rating">
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star"></span>
+                                 <span class="fa fa-star"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         
+             <div class="filterDiv" data-item="shirts">
+                 <div class="box">
+                     <div class="imgBox">
+                         <img src="/image/Men_Shirt.jpg" alt="">
+                         <ul class="usrAc">
+                             <li>
+                                 <i class="fa fa-heart"></i>
+                                 <span>Add to Wishlist</span>
+                             </li>
+                             <li>
+                                 <i class="fa fa-shopping-cart"></i>
+                                 <span>Add to cart</span>
+                             </li>
+                             <li>
+                                 <i class="fa fa-eye"></i>
+                                 <span>Add to Details</span>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="productInfo">
+                         <div class="productName">
+                             <p>Rayon a-line Dress</p>
+                         </div>
+                         <div class="price_rating">
+                             <p>$13.45</p>
+                             <div class="rating">
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         
+             <div class="filterDiv" data-item="handbag">
+                 <div class="box">
+                     <div class="imgBox">
+                         <img src="/image/Men_handbag.jpg" alt="">
+                         <ul class="usrAc">
+                             <li>
+                                 <i class="fa fa-heart"></i>
+                                 <span>
+                                     Add to Wishlist</span>
+                             </li>
+                             <li>
+                                 <i class="fa fa-shopping-cart"></i>
+                                 <span>Add to cart</span>
+                             </li>
+                             <li>
+                                 <i class="fa fa-eye"></i>
+                                 <span>Add to Details</span>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="productInfo">
+                         <div class="productName">
+                             <p>Rayon a-line Dress</p>
+                         </div>
+                         <div class="price_rating">
+                             <p>$13.45</p>
+                             <div class="rating">
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         
+             <div class="filterDiv" data-item="+">
+                 <div class="box">
+                     <div class="imgBox">
+                         <img src="/image/Women_jean.jpg" alt="">
+                         <ul class="usrAc">
+                             <li>
+                                 <i class="fa fa-heart"></i>
+                                 <span>Add to Wishlist</span>
+                             </li>
+                             <li>
+                                 <i class="fa fa-shopping-cart"></i>
+                                 <span>Add to cart</span>
+                             </li>
+                             <li>
+                                 <i class="fa fa-eye"></i>
+                                 <span>Add to Details</span>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="productInfo">
+                         <div class="productName">
+                             <p>Rayon a-line Dress</p>
+                         </div>
+                         <div class="price_rating">
+                             <p>$13.45</p>
+                             <div class="rating">
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         
+             <div class="filterDiv" data-item="+">
+                 <div class="box">
+                     <div class="imgBox">
+                         <img src="/image/Round_next_printed_top.jpg" alt="">
+                         <ul class="usrAc">
+                             <li>
+                                 <i class="fa fa-heart"></i>
+                                 <span>Add to Wishlist</span>
+                             </li>
+                             <li>
+                                 <i class="fa fa-shopping-cart"></i>
+                                 <span>Add to cart</span>
+                             </li>
+                             <li>
+                                 <i class="fa fa-eye"></i>
+                                 <span>Add to Details</span>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="productInfo">
+                         <div class="productName">
+                             <p>Rayon a-line Dress</p>
+                         </div>
+                         <div class="price_rating">
+                             <p>$13.45</p>
+                             <div class="rating">
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         
+             <div class="filterDiv" data-item="+">
+                 <div class="box">
+                     <div class="imgBox">
+                         <img src="/image/Men_running_shoe.jpg" alt="">
+                         <ul class="usrAc">
+                             <li>
+                                 <i class="fa fa-heart"></i>
+                                 <span>Add to Wishlist</span>
+                             </li>
+                             <li>
+                                 <i class="fa fa-shopping-cart"></i>
+                                 <span>Add to cart</span>
+                             </li>
+                             <li>
+                                 <i class="fa fa-eye"></i>
+                                 <span>Add to Details</span>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="productInfo">
+                         <div class="productName">
+                             <p>Rayon a-line Dress</p>
+                         </div>
+                         <div class="price_rating">
+                             <p>$13.45</p>
+                             <div class="rating">
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         
+             <div class="filterDiv" data-item="+">
+                 <div class="box">
+                     <div class="imgBox">
+                         <img src="/image/men_sweter.jpg" alt="">
+                         <ul class="usrAc">
+                             <li>
+                                 <i class="fa fa-heart"></i>
+                                 <span>Add to Wishlist</span>
+                             </li>
+                             <li>
+                                 <i class="fa fa-shopping-cart"></i>
+                                 <span>Add to cart</span>
+                             </li>
+                             <li>
+                                 <i class="fa fa-eye"></i>
+                                 <span>Add to Details</span>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="productInfo">
+                         <div class="productName">
+                             <p>Rayon a-line Dress</p>
+                         </div>
+                         <div class="price_rating">
+                             <p>$13.45</p>
+                             <div class="rating">
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                                 <span class="fa fa-star checked"></span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
             </div>
-        </div>
-    
-        <div class="filterDiv shirts">
-            <div class="box">
-                <div class="imgBox">
-                    <img src="/image/Men_Shirt.jpg" alt="">
-                    <ul class="usrAc">
-                        <li>
-                            <i class="fa fa-heart"></i>
-                            <span>Add to Wishlist</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-shopping-cart"></i>
-                            <span>Add to cart</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-eye"></i>
-                            <span>Add to Details</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="productInfo">
-                    <div class="productName">
-                        <p>Rayon a-line Dress</p>
-                    </div>
-                    <div class="price_rating">
-                        <p>$13.45</p>
-                        <div class="rating">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <div class="filterDiv handbag">
-            <div class="box">
-                <div class="imgBox">
-                    <img src="/image/Men_handbag.jpg" alt="">
-                    <ul class="usrAc">
-                        <li>
-                            <i class="fa fa-heart"></i>
-                            <span>Add to Wishlist</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-shopping-cart"></i>
-                            <span>Add to cart</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-eye"></i>
-                            <span>Add to Details</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="productInfo">
-                    <div class="productName">
-                        <p>Rayon a-line Dress</p>
-                    </div>
-                    <div class="price_rating">
-                        <p>$13.45</p>
-                        <div class="rating">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <div class="filterDiv +">
-            <div class="box">
-                <div class="imgBox">
-                    <img src="/image/Women_jean.jpg" alt="">
-                    <ul class="usrAc">
-                        <li>
-                            <i class="fa fa-heart"></i>
-                            <span>Add to Wishlist</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-shopping-cart"></i>
-                            <span>Add to cart</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-eye"></i>
-                            <span>Add to Details</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="productInfo">
-                    <div class="productName">
-                        <p>Rayon a-line Dress</p>
-                    </div>
-                    <div class="price_rating">
-                        <p>$13.45</p>
-                        <div class="rating">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <div class="filterDiv +">
-            <div class="box">
-                <div class="imgBox">
-                    <img src="/image/Round_next_printed_top.jpg" alt="">
-                    <ul class="usrAc">
-                        <li>
-                            <i class="fa fa-heart"></i>
-                            <span>Add to Wishlist</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-shopping-cart"></i>
-                            <span>Add to cart</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-eye"></i>
-                            <span>Add to Details</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="productInfo">
-                    <div class="productName">
-                        <p>Rayon a-line Dress</p>
-                    </div>
-                    <div class="price_rating">
-                        <p>$13.45</p>
-                        <div class="rating">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <div class="filterDiv +">
-            <div class="box">
-                <div class="imgBox">
-                    <img src="/image/Men_running_shoe.jpg" alt="">
-                    <ul class="usrAc">
-                        <li>
-                            <i class="fa fa-heart"></i>
-                            <span>Add to Wishlist</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-shopping-cart"></i>
-                            <span>Add to cart</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-eye"></i>
-                            <span>Add to Details</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="productInfo">
-                    <div class="productName">
-                        <p>Rayon a-line Dress</p>
-                    </div>
-                    <div class="price_rating">
-                        <p>$13.45</p>
-                        <div class="rating">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <div class="filterDiv +">
-            <div class="box">
-                <div class="imgBox">
-                    <img src="/image/men_sweter.jpg" alt="">
-                    <ul class="usrAc">
-                        <li>
-                            <i class="fa fa-heart"></i>
-                            <span>Add to Wishlist</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-shopping-cart"></i>
-                            <span>Add to cart</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-eye"></i>
-                            <span>Add to Details</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="productInfo">
-                    <div class="productName">
-                        <p>Rayon a-line Dress</p>
-                    </div>
-                    <div class="price_rating">
-                        <p>$13.45</p>
-                        <div class="rating">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-       </div>
-    </div>
-    
+         </div>
+         <div class="page">
+             <ul class="listPageNum">
+                 <li class="pageNum active"><<</li>
+                 <li class="pageNum">1</li>
+                 <li class="pageNum">2</li>
+                 <li class="pageNum">3</li>
+                 <li class="pageNum">4</li>
+                 <li class="pageNum">5</li>
+                 <li class="pageNum">6</li>
+                 <li class="pageNum">>></li>
+             </ul>
+         </div>
+    </section>
+  
+    <script>
+        const filter_button=document.querySelectorAll('#btnContainer .btn');
+        const filterDiv=document.querySelectorAll(".filterDiv");
+        const filterpage=document.querySelectorAll(".pageNum");
+
+        Array.from(filter_button).forEach(function(element){
+            element.addEventListener('click',function(event){
+               for(let i=0;i<filter_button.length;i++)
+               {
+                   filter_button[i].classList.remove('active');
+               }
+               this.classList.add('active')
+
+                let name_filter =element.dataset.filter;
+                Array.from(filterDiv).forEach(function(product) {
+                if(product.dataset.item === name_filter || name_filter==="all")
+                {
+                      product.style.display='grid';
+                }
+                else{
+                    product.style.display='none';
+                }
+            });
+            })           
+        })
+        Array.from(filterpage).forEach(function(element){
+            element.addEventListener('click',function(event)
+            {
+                for(let i=0;i<filterpage.length;i++)
+                {
+                    filterpage[i].classList.remove('active');
+                }
+                this.classList.add('active');
+            })
+
+        })
+    </script>
    
 
 </body>
